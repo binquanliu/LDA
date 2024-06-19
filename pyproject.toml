@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lda"
-version = "3.0.0"
+version = "3.0.1"
 description = "Topic modeling with latent Dirichlet allocation"
 authors = ["lda developers <lda-users@googlegroups.com>"]
 license = "MPL 2.0"
@@ -15,7 +15,6 @@ classifiers = [
     "Programming Language :: Cython",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -34,11 +33,11 @@ include = [
 script = "build.py"
 
 [tool.poetry.dependencies]
-python = ">=3.9,<=3.12"
-numpy = ">=1.13.0,<2.0"
+python = ">=3.10"
+numpy = ">=1.83"
 
 [tool.poetry.group.dev.dependencies]
-cython = "^3.0.3"
+cython = "^3.0.8"
 scipy = "^1.11.3"
 sphinx = "^7.2.6"
 sphinx-autoapi = "^3.0.0"
@@ -57,12 +56,12 @@ flake8 = "^5.0.1"
 
 [tool.poetry.group.build.dependencies]
 meson-python = "^0.14.0"
-cython = "^3.0.3"
-ninja = "^1.11.1.1"
-cibuildwheel = "^2.16.2"
+cython = "^3.0.8"
+ninja = "^1.11"
+cibuildwheel = "^2.16"
 
 [tool.cibuildwheel]
-build = "cp39-* cp310-* cp311-* cp312-*"
+build = "cp310-* cp311-* cp312-*"
 skip = ["pp*", "*i686", "*win32"]
 test-requires = ["oslotest", "scipy", "setuptools"]
 test-command = "python -m unittest discover -s {project}/lda/tests"

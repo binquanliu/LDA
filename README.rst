@@ -89,7 +89,7 @@ The document-topic distributions are available in ``model.doc_topic_``.
 Requirements
 ------------
 
-Python 3.9+ and NumPy is required.
+Python ≥3.10 and NumPy.
 
 Caveat
 ------

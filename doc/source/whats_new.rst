@@ -6,7 +6,12 @@
  What's New
 ============
 
-v3.0.0 (tba)
+v3.0.1 (19. June 2024)
+======================
+- Drop support for Python 3.9.
+- Construct nzw in fortran order to reduce cache misses in hot loops. Thanks @ghuls.
+
+v3.0.0 (4. December 2023)
 ============
 - Drop support for Python 3.6, 3.7 and 3.8
 - Wheels for Python 3.9, 3.10, 3.11 and 3.12
