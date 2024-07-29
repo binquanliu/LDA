@@ -6,6 +6,10 @@
  What's New
 ============
 
+v3.0.2 (29. July 2024)
+======================
+- Fix typo in version number of NumPy dependency. (thanks @b-trout)
+
 v3.0.1 (19. June 2024)
 ======================
 - Drop support for Python 3.9.
